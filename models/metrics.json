@@ -1,0 +1,67 @@
+{
+  "dataset": "Synthetic simulation only",
+  "rows": 12000,
+  "split": {
+    "train": 7200,
+    "validation": 2400,
+    "calibration": 1200,
+    "test": 1200
+  },
+  "seed": 42,
+  "targets": {
+    "range_km": {
+      "selected_model": "Gradient boosting",
+      "validation": {
+        "Linear regression": {
+          "mae": 6.1971,
+          "rmse": 8.5492,
+          "r2": 0.9074
+        },
+        "Random forest": {
+          "mae": 4.08,
+          "rmse": 5.9031,
+          "r2": 0.9559
+        },
+        "Gradient boosting": {
+          "mae": 2.3982,
+          "rmse": 3.5737,
+          "r2": 0.9838
+        }
+      },
+      "test": {
+        "mae": 2.3635,
+        "rmse": 3.635,
+        "r2": 0.9825
+      },
+      "interval_half_width": 5.182,
+      "test_interval_coverage": 0.8942
+    },
+    "soh_pct": {
+      "selected_model": "Gradient boosting",
+      "validation": {
+        "Linear regression": {
+          "mae": 1.5429,
+          "rmse": 1.942,
+          "r2": 0.9521
+        },
+        "Random forest": {
+          "mae": 1.4566,
+          "rmse": 1.8265,
+          "r2": 0.9576
+        },
+        "Gradient boosting": {
+          "mae": 1.4247,
+          "rmse": 1.7813,
+          "r2": 0.9597
+        }
+      },
+      "test": {
+        "mae": 1.4519,
+        "rmse": 1.8107,
+        "r2": 0.9574
+      },
+      "interval_half_width": 2.877,
+      "test_interval_coverage": 0.8833
+    }
+  }
+}
